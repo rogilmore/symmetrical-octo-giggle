@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
 
-<title>index.html</title>
+<title>Symmetrical Octo Giggle</title>
 
+<script src="site_libs/header-attrs-2.1/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -70,9 +71,7 @@ h6 {
 </style>
 
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -86,13 +85,18 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
 }
+.html-widget {
+  margin-bottom: 20px;
+}
 button.code-folding-btn:focus {
   outline: none;
+}
+summary {
+  display: list-item;
 }
 </style>
 
@@ -108,7 +112,6 @@ body {
   padding-top: 56px;
   margin-top: -56px;
 }
-
 .section h2 {
   padding-top: 56px;
   margin-top: -56px;
@@ -128,6 +131,43 @@ body {
 .section h6 {
   padding-top: 56px;
   margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -149,19 +189,74 @@ $(document).ready(function () {
 });
 </script>
 
-
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-</script>
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
 
 <!-- code folding -->
 
 
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
 
 
 
@@ -182,17 +277,26 @@ $(document).ready(function () {
   <a href="index.html">Home</a>
 </li>
 <li>
-  <a href="page_1.html">Page 1</a>
+  <a href="page_1.html">Running the Website</a>
+</li>
+<li>
+  <a href="menu_1.html">Symmetry Visualization</a>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Menu
+    Different Octopi
      
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="menu_1.html">Menu 1</a>
+      <a href="https://octopusworlds.com/atlantic-pygmy-octopus/">Atlantic Pygmy Octopus</a>
+    </li>
+    <li>
+      <a href="https://octopusworlds.com/blue-ringed-octopus/">Blue Ringed Octopus</a>
+    </li>
+    <li>
+      <a href="https://octopusworlds.com/mimic-octopus/">Mimic Octopus</a>
     </li>
   </ul>
 </li>
@@ -217,24 +321,12 @@ $(document).ready(function () {
 </div>
 
 
-<div id="title" class="section level1">
-<h1>Title</h1>
-<p>This is the home page for a template website you can build yourself.</p>
-<div id="more-info" class="section level2">
-<h2>More info</h2>
-<p>This is a regular R Markdown document. Put anything you like here, including R code.</p>
-</div>
-<div id="about-the-yaml-header" class="section level2">
-<h2>About the YAML header</h2>
-<p>Note that the YAML header is pretty minimal–just a title.</p>
-</div>
-<div id="rendering-the-site" class="section level2">
-<h2>Rendering the site</h2>
-<ol style="list-style-type: decimal">
-<li>Run <code>rmarkdown::render_site()</code> from the same directory as the <code>_site.yml</code> file.</li>
-<li>View the output in the directory your YAML file specifies in <code>output_dir</code>. The template says: <code>output_dir: &quot;docs&quot;</code> so look in <code>docs/</code>.</li>
-<li>Open the <code>index.html</code> file in your browser to view your handywork.</li>
-</ol>
+<div id="symmetrical-octo-giggle" class="section level1">
+<h1>Symmetrical Octo Giggle</h1>
+<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR6_qpmAWtjheMCUTCnltl4t0WGM1iM9zv72J13jHm6afjErM1X" /></p>
+<div id="how-many-tickles-does-it-take-to-make-an-octopus-laugh" class="section level2">
+<h2>How many tickles does it take to make an octopus laugh?</h2>
+<p>Ten tickles! (Tentacles)</p>
 </div>
 </div>
 
@@ -255,6 +347,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
