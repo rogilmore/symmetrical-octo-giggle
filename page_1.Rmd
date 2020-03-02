@@ -1,21 +1,11 @@
 ---
-title: "Website template page 1"
+title: "Website Information Page"
 ---
 
-# Title
+<!-- This is 'page_1' for the website output -->
 
-This is `page_1` for the website template.
+# Rendering the site
+1. Run `rmarkdown::render_site()` from the same directory as the `_site.yml` file.
+2. View the output in the directory your YAML file specifies in `output_dir`. The template says: `output_dir: "docs"` so look in docs/.
+3. Open the index.html file in your browser to view your handiwork.
 
-## More info
-
-Like the `index.Rmd` file, this is a regular R Markdown document. 
-Put anything you like here, including R code:
-
-```{r}
-hist(rnorm(500))
-```
-
-## About the YAML header
-
-Note that the YAML header is pretty minimal--just a title.
-© 2020 

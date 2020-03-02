@@ -4,12 +4,18 @@ navbar:
   left:
     - text: "Home"
       href: index.html
-    - text: "Page 1"
+    - text: "Running the Website"
       href: page_1.html
-    - text: "Menu"
+    - text: "Symmetry Visualization"
+      href: menu_1.html
+    - text: "Different Octopi"
       menu:
-        - text: "Menu 1"
-          href: menu_1.html
+        - text: "Atlantic Pygmy Octopus"
+          href: https://octopusworlds.com/atlantic-pygmy-octopus/
+        - text: "Blue Ringed Octopus"
+          href: https://octopusworlds.com/blue-ringed-octopus/
+        - text: "Mimic Octopus"
+          href: https://octopusworlds.com/mimic-octopus/
   right:
     - icon: ion-social-github
       href: https://github.com

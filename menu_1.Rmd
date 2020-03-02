@@ -1,20 +1,19 @@
 ---
-title: "Website template menu_1 page"
+title: "Visualizing Symmetry"
 ---
 
-# Title
-
-This is `menu_1` for the website template.
-
-## More info
-
-Like the `index.Rmd` and `page_1.Rmd` files, this is a regular R Markdown document. 
-Put anything you like here, including R code:
-
-```{r}
-plot(rnorm(500), runif(500))
+```{r Set-up, message=FALSE, warning=FALSE, include=FALSE}
+library(tidyverse)
 ```
 
-## About the YAML header
 
-Note that the YAML header is pretty minimal--just a title.
+# Histogram
+```{r Normal distribution histogram, echo=TRUE}
+normal <- as.data.frame(rnorm(1000000))
+
+normal_hist <- ggplot(normal, aes(rnorm(1e+06))) +
+  geom_histogram()
+normal_hist
+```
+
+

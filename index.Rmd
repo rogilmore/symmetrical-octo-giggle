@@ -1,23 +1,12 @@
 ---
-pagetitle: "index.html"
+pagetitle: Symmetrical Octo Giggle
 ---
 
-# Title
+# Symmetrical Octo Giggle
 
-This is the home page for a template website you can build yourself.
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR6_qpmAWtjheMCUTCnltl4t0WGM1iM9zv72J13jHm6afjErM1X)
 
-## More info
 
-This is a regular R Markdown document. 
-Put anything you like here, including R code.
+## How many tickles does it take to make an octopus laugh?
 
-## About the YAML header
-
-Note that the YAML header is pretty minimal--just a title.
-
-## Rendering the site
-
-1. Run `rmarkdown::render_site()` from the same directory as the `_site.yml` file.
-2. View the output in the directory your YAML file specifies in `output_dir`.
-The template says: `output_dir: "docs"` so look in `docs/`.
-3. Open the `index.html` file in your browser to view your handywork.
+Ten tickles! (Tentacles)
