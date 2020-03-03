@@ -22,7 +22,7 @@ navbar:
 output_dir: "docs"
 output:
   html_document:
-  theme: flatly
-  highlight: textmate
-  include:
-    after_body: footer.html
+    theme: flatly
+    highlight: textmate
+    include:
+      after_body: footer.html
